@@ -4,4 +4,9 @@ public class Child extends Customer {
         super(age, height, money);
 
     }
+
+    public String askQuestion(String ride) {
+
+        return super.askQuestion(ride) + " go faster ?";
+    }
 }

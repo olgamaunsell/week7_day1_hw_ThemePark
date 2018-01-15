@@ -32,5 +32,15 @@ public class CustomerTest {
         assertEquals(25, adult.getMoney(), 0.01);
     }
 
+    @Test
 
+    public void childCanAskQuestion(){
+        assertEquals("Can this Waltzer go faster ?", child1.askQuestion("Waltzer"));
+    }
+
+    @Test
+
+    public void adultCanAskQuestion(){
+        assertEquals("Can this Rollercoaster go slower ?", adult.askQuestion("Rollercoaster"));
+    }
 }

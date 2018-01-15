@@ -21,4 +21,10 @@ public abstract class Customer {
     public double getMoney() {
         return this.money;
     }
+
+    public String askQuestion(String ride){
+        return "Can this " + ride;
+    }
+
+
 }
