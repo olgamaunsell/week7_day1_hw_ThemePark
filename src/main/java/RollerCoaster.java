@@ -5,5 +5,8 @@ public class RollerCoaster extends Ride {
 
     }
 
+    public String charge(Customer customer){
+        return "You are charged £" + getPrice() + " and are going on the rollercoaster !";
+    }
 
 }

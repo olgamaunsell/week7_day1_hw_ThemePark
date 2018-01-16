@@ -48,12 +48,11 @@ public class RideTest {
         assertEquals("Ride stopped", rollerCoaster.stopRide());
     }
 
-//    @Test
-//
-//    public void canChargeCustomer(){
-//        rollerCoaster.charge(adult);
-//        assertEquals(21.00, adult.getMoney(), 0.0.1);
-//    }
+    @Test
+
+    public void canChargeCustomer(){
+        assertEquals("You are charged £4.00 and are going on the rollercoaster !", rollerCoaster.charge(adult)) ;
+    }
 
     @Test
     public void waltzerCanPlaySong(){
@@ -64,4 +63,5 @@ public class RideTest {
     public void ghostTrainCanPlaySong(){
         assertEquals("Monster Mash", ghostTrain.playSong() );
     }
+
 }

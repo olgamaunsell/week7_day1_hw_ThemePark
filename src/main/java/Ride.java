@@ -1,4 +1,4 @@
-public abstract class Ride{
+public abstract class Ride implements ICharge{
 
     private double price;
     private int minAge;
@@ -30,4 +30,6 @@ public abstract class Ride{
     public String stopRide() {
         return "Ride stopped";
     }
+
+    public abstract String charge(Customer customer);
 }
